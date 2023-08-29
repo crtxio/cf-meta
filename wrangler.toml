@@ -1,0 +1,20 @@
+name = "meta"
+main = "./meta/src/index.ts"
+compatibility_date = "2022-11-30"
+
+account_id = "__CLOUDFLARE_ACCOUNT_ID__"
+workers_dev = true
+
+[[routes]]
+pattern = "meta.crtx.one/*"
+zone_id = "__CLOUDFLARE_ZONE_ID__"
+
+[[kv_namespaces]]
+binding = "RESOLVER"
+id = "__RESOLVER_KV_ID__"
+preview_id = "__RESOLVER_KV_PREVIEW_ID__"
+
+[[kv_namespaces]]
+binding = "ZONES"
+id = "__ZONES_KV_ID__"
+preview_id = "__ZONES_KV_PREVIEW_ID__"
