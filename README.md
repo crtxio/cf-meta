@@ -48,6 +48,7 @@ This repository is meant for use in conjunction with [Cortex-Publisher](https://
 
     - __*CLOUDFLARE_API_TOKEN*__: The API token associated to your Cloudflare account.
     - __*CLOUDFLARE_ACCOUNT_ID*__: The ID of your Cloudflare account.
+    - __*CLOUDFLARE_ROUTE_PATTERN*__: The route pattern of the domain you wish your worker to use. Example: `meta.example.com/*`
     - __*CLOUDFLARE_ZONE_ID*__: The Zone ID of the domain within your Cloudflare account.
     - __*RESOLVER_KV_ID*__: The ID of the RESOLVER KV you created in the previous step
     - __*RESOLVER_KV_PREVIEW_ID*__: The ID of the RESOLVER_PREVIEW KV you created in the previous step.
@@ -59,6 +60,7 @@ This repository is meant for use in conjunction with [Cortex-Publisher](https://
     ```console
         gh secret set REPO_OWNER/REPO_NAME <__*CLOUDFLARE_API_TOKEN*__>
         gh secret set REPO_OWNER/REPO_NAME <__*CLOUDFLARE_ACCOUNT_ID*__>
+        gh secret set REPO_OWNER/REPO_NAME <__*CLOUDFLARE_ROUTE_PATTERN*__>
         gh secret set REPO_OWNER/REPO_NAME <__*CLOUDFLARE_ZONE_ID*__>
         gh secret set REPO_OWNER/REPO_NAME <__*RESOLVER_KV_ID*__>
         gh secret set REPO_OWNER/REPO_NAME <__*RESOLVER_KV_PREVIEW_ID*__>
